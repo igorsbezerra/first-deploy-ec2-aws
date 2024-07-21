@@ -9,7 +9,7 @@ import java.util.List;
 @RestController
 @RequestMapping("hello")
 public class HelloController {
-    private List<String> users = List.of("Igor", "Livia", "Henry");
+    private final List<String> users = List.of("Igor", "Livia", "Henry");
 
     @GetMapping
     public String hello() {
